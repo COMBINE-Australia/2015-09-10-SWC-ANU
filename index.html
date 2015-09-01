@@ -1,20 +1,20 @@
 ---
 layout: workshop
 root: .
-venue: FIXME      # brief name of host site
-address: FIXME    # street address of home location
+venue: 'Australian National University, Canberra'
+address: 'Level 3, Science Teaching Building, Bld 136, The Australian National University, Canberra.'
 country: 'Australia'    # country (hyphenated if need be, like 'United-Kingdom')
 language: 'en'   # language code like 'en' or 'fr'
 latlng:  -35.2776999,149.11852699999997   # fractional latitude and longitude like 41.7901128,-87.6007318
-humandate: 'Sept 10-11, 2015  # use the format 'Feb 17-18, 2020' (without the quotes)country: FIXME    # country (hyphenated if need be, like 'United-Kingdom')
-humantime: FIXME  # use the format '9:00 am - 4:30 pm' (without the quotes)
+humandate: 'Sep 10-11, 2015'  # use the format 'Feb 17-18, 2020' (without the quotes)
+country: Australia    # country (hyphenated if need be, like 'United-Kingdom')
+humantime: 9:00 am - 5:00 pm  # use the format '9:00 am - 4:30 pm' (without the quotes)
 startdate: 2015-09-10  # use YYYY-MM-DD format like 2015-01-01
 enddate: 2015-09-11   # use YYYY-MM-DD format like 2015-01-02
-instructor: Andrew Lonsdale, Alistair Walsh, Adam, Angela, Kevin, Jack# list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: FIXME     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-contact: FIXME    # contact email address for workshop organizer
+instructor: ["Andrew Lonsdale", "Alistair Walsh", "Jack Simpson"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Adam Taranto","Angela McGaughran","Kevin Murray"]  # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+contact: canberra@combine.org.au  # contact email address for workshop organizer
 etherpad:   # optional (insert the URL for your Etherpad if you're using one)
-eventbrite: # optional (delete this if not used, otherwise uncomment and provide 1234567890AB key for Eventbrite registration)
 ---
 <!--
   HEADER
@@ -32,15 +32,6 @@ eventbrite: # optional (delete this if not used, otherwise uncomment and provide
   are not using Eventbrite, or leave it in, since it will not be
   displayed if the 'eventbrite' field in the header is not set.
 -->
-{% if page.eventbrite %}
-<iframe
-  src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
-  frameborder="0"
-  width="100%"
-  height="206px"
-  scrolling="auto">
-</iframe>
-{% endif %}
 
 <h2>General Information</h2>
 
@@ -234,19 +225,6 @@ eventbrite: # optional (delete this if not used, otherwise uncomment and provide
       <li><a href="{{site.swc_lessons}}/ref/03-python.html">Reference...</a></li>
     </ul>
   </div>
-  <!--
-  <div class="col-md-6">
-    <h3>Programming in R</h3>
-    <ul>
-      <li>Working with vectors and data frames</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Using R from the command line</li>
-      <li><a href="{{site.swc_lessons}}/ref/06-R.html">Reference...</a></li>
-    </ul>
-  </div>
-  -->
 </div>
 
 <div class="row">
@@ -262,20 +240,6 @@ eventbrite: # optional (delete this if not used, otherwise uncomment and provide
       <li>Open licenses</li>
       <li>Where to host work, and why</li>
       <li><a href="{{site.swc_lessons}}/ref/02-git.html">Reference...</a></li>
-    </ul>
-  </div>
-  <div class="col-md-6">
-    <h3>Managing Data with SQL</h3>
-    <ul>
-      <li>Reading and sorting data</li>
-      <li>Filtering with <code>where</code></li>
-      <li>Calculating new values on the fly</li>
-      <li>Handling missing values</li>
-      <li>Combining values using aggregation</li>
-      <li>Combining information from multiple tables using <code>join</code></li>
-      <li>Creating, modifying, and deleting data</li>
-      <li>Programming with databases</li>
-      <li><a href="{{site.swc_lessons}}/ref/04-sql.html">Reference...</a></li>
     </ul>
   </div>
 </div>
